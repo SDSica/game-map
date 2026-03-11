@@ -24,13 +24,13 @@ let isDialogOpen;
 
 function preload() {
     // 1. Load the JSON exported from Tiled
-    this.load.tilemapTiledJSON('map', 'map.json');
+    this.load.tilemapTiledJSON('map', 'Tiled/map.json');
 
     // 2. Load all tileset images
-    this.load.image('overworld', 'overworld.png');
-    this.load.image('overworld3', 'overworld3.png');
-    this.load.image('flora', 'flora.png');
-    this.load.image('objects', 'objects.png');
+    this.load.image('overworld', 'Tiled/overworld.png');
+    this.load.image('overworld3', 'Tiled/overworld3.png');
+    this.load.image('flora', 'Tiled/flora.png');
+    this.load.image('objects', 'Tiled/objects.png');
     // ... add the rest here
 
     this.load.spritesheet('player', 'player.png', {
@@ -200,3 +200,4 @@ if (isDialogOpen) {
     }
 
 }
+
